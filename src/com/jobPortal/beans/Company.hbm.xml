@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.jobPortal.beans.Company" 
+    table="Company"
+>
+
+    <id
+        name="companyId"
+        type="java.lang.Long"
+        column="company_id"
+    >
+    
+        <generator class="native" />
+    </id>
+
+    <property
+        name="companyName"
+        type="java.lang.String"
+        column="companyName"
+        length="255"
+    />
+    <property
+        name="companyEmail"
+        type="java.lang.String"
+        column="companyEmail"
+        length="255"
+    />
+    <property
+        name="companyPassword"
+        type="java.lang.String"
+        column="companyPassword"
+        length="255"
+    />
+    <property
+        name="isActive"
+        type="java.lang.String"
+        column="isActive"
+        length="255"
+    />
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="createdBy"
+        length="255"
+    />
+    <property
+        name="createdDate"
+        type="java.lang.String"
+        column="createdDate"
+        length="255"
+    />
+    <property
+        name="modifiedBy"
+        type="java.lang.String"
+        column="modifiedBy"
+        length="255"
+    />
+    <property
+        name="modifiedDate"
+        type="java.lang.String"
+        column="modifiedDate"
+        length="255"
+    />
+    <property
+        name="companyLogo"
+        type="java.lang.String"
+        column="CompanyLogo"
+        length="255"
+    />
+
+    <!-- Associations -->
+  
+    <!-- bi-directional many-to-one association to UserAccount -->
+    <many-to-one
+        name="userAccount"
+        class="com.jobPortal.beans.UserAccount"
+        not-null="true"
+    >
+        <column name="FkuserAccount_id" />
+    </many-to-one>
+    <!-- bi-directional one-to-many association to PostJob -->
+    <set
+        name="postJobs"
+        lazy="true"
+        inverse="true"
+		cascade="none"
+    >
+        <key>
+            <column name="FkcompanyId" />
+        </key>
+        <one-to-many 
+            class="com.jobPortal.beans.PostJob"
+        />
+    </set>
+    <!-- bi-directional one-to-many association to ContactUser -->
+    <set
+        name="contactUsers"
+        lazy="true"
+        inverse="true"
+		cascade="none"
+    >
+        <key>
+            <column name="companyId" />
+        </key>
+        <one-to-many 
+            class="com.jobPortal.beans.ContactUser"
+        />
+    </set>
+
+</class>
+</hibernate-mapping>

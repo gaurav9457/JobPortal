@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.jobPortal.beans.AdminTable" 
+    table="AdminTable"
+>
+
+    <id
+        name="adminId"
+        type="java.lang.Long"
+        column="admin_id"
+    >
+    
+        <generator class="native" />
+    </id>
+
+    <property
+        name="firstName"
+        type="java.lang.String"
+        column="firstName"
+        length="255"
+    />
+    <property
+        name="lastName"
+        type="java.lang.String"
+        column="lastName"
+        length="255"
+    />
+    <property
+        name="emailId"
+        type="java.lang.String"
+        column="email_id"
+        length="255"
+    />
+    <property
+        name="password"
+        type="java.lang.String"
+        column="password"
+        length="255"
+    />
+    <property
+        name="isActive"
+        type="java.lang.String"
+        column="isActive"
+        length="255"
+    />
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="createdBy"
+        length="255"
+    />
+    <property
+        name="createdDate"
+        type="java.sql.Date"
+        column="createdDate"
+        length="10"
+    />
+    <property
+        name="modifiedBy"
+        type="java.lang.String"
+        column="modifiedBy"
+        length="255"
+    />
+    <property
+        name="modifiedDate"
+        type="java.sql.Date"
+        column="modifiedDate"
+        length="10"
+    />
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

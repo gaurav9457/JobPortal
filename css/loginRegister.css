@@ -1,0 +1,559 @@
+#parent{
+    width: 1200px;
+    margin: 0 auto;
+}
+#midBanner{
+  /*  width:1200px; */
+   height: 400px;
+   background-image: url(../images/midBanner.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding: 50px;
+   padding-top: 70px;
+
+}
+#formDiv{
+   width: 300px;
+   height:350px;
+   background-color: rgb(243, 248, 243);
+   padding: 15px;
+   border-radius: 10px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.selectForm{
+    width: 250px;
+    height: 40px;
+    margin-left: 20px;
+    border: 1px solid gray;
+    padding: 3px;
+
+      
+}
+#radioButton{
+	height:20px;
+	width:250px;
+	
+	margin-left:30px;
+	margin-top:30px;
+}
+
+#submitBtn{
+    height: 40px;
+    width: 250px;
+    background-color: #f75d34;
+    border: none;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 10px;
+    color: white;
+    cursor:pointer;
+}
+#submitBtn:hover{
+	background-color: white;
+    border-color:#f75d34;
+    color:#f75d34;
+}
+.tablink {
+    
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding:12px 7px;
+    font-size: 17px;
+    width: 15%;
+  }
+  
+  .tablink:hover {
+    border-bottom:1px solid #f75d34;
+  }
+  
+  .tabcontent {
+    color: white;
+  /*   display: none; */
+     /* padding: 50px 20px;  */
+     height: 100%; 
+  }
+  /* .tabcontent {
+    color: white;
+    display: none;
+    padding: 0 20px;
+    position: relative; 
+} */
+
+/* .tab-bottom-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+} */
+
+ #carCardParent,#UsedCars{
+    /* width: 1200px; */
+    border: 0.5px solid grey;
+    padding: 10px;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top:20px;
+}
+#imgDiv{
+    height: 80px;
+    width: 100px;
+    border-radius:1px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+#cardBody {
+    display: inline-block;
+    width:250px;
+    height: 330px;
+    border: 1px solid grey;
+    margin: 14px;
+    /* background-color: #fff;  */
+    /* padding: 20px; */
+    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.1);
+    color: black;
+    vertical-align: top; 
+    font-size: 16px; 
+     border-radius:10px; 
+    /* float: left; */
+}
+#cardBody :hover{
+	 box-shadow: 2px 10px 10px rgba(98, 163, 238, 0.4);
+}
+#carCardContent{
+    padding:15px;
+    margin-top: 10px;
+}
+#carCardprice{
+       display: block;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    width: 225px;
+    height: 19px;
+}
+#carCardName{
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(218, 223, 223);
+    border-radius: 5px;
+    color: #3b91f5;
+}
+#cardButton{
+    padding: 10px 15px;
+    background: linear-gradient(to right, #24c6dc, #514a9d);
+   border:none;
+    color:white;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 17px;
+   
+    margin-left: 56px;
+    margin-top: 15px;
+    
+}
+#cardButton:hover{
+	background: linear-gradient(to right, #50c9c3, #96deda);
+    border-color: white;
+     color:white;
+}
+#jobTitle{
+    margin-top: 10px;
+}
+ #popupDiv{
+    height: 100vh;
+    width: 1200px;
+    background-color: rgb(33, 33, 32,0.8);
+    position: fixed;
+    top: 0;
+    display: none;
+
+}
+#LoginImg{
+    height:400px;
+    width:300px ;
+    background-image: url(../images/loginimg1.jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+    display: inline-block;
+   
+    /* position: absolute;
+    top: 164px;
+    left: 200px; */
+}
+#popup-child{
+    height: 400px;
+    width: 400px;
+    border-radius:5px;
+    background-color:white ; 
+    position: absolute;
+    /* inset: 0;
+    margin: auto; */
+    display: inline-block;
+}
+#popupChildMain{
+    height: 400px;
+    width: 730px;
+	/*  max-height:90%;
+	  max-width:50%;   */
+    position: absolute;
+    inset: 0;
+    margin: auto;
+
+}
+#close{
+    position: absolute;
+    top: 5px;
+    left: 360px;
+    cursor: pointer;
+    color: black;
+    border-radius: 50px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#LoginformDiv{
+    height: 300px;
+    width: 350px;
+    /* background-color: red; */  
+    margin: auto;
+    margin-top: 25px;
+	
+}
+
+#userTypeAdmin,#userTypeUser{
+	margin-left:30px;
+	margin-top:10px;
+	
+}
+input[type="radio"]:checked + label {
+        color: orange; 
+    }
+#Username,#Password{
+    padding: 6px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+    width: 280px;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 25px;
+    color: black;
+    
+}
+::placeholder {
+    color:black;
+    
+  }
+#labelUsername,#labelPassword{
+   color: black;
+   font-size: 20px;
+   margin-left: 20px;
+   
+
+}
+#Username,#Password:focus{
+    outline: none;
+}
+#Loginbtn{
+    padding: 15px 28px;
+    background-color: #f75d34;
+    border: 1px solid;
+    margin: 30px 10px 10px 120px;
+    color: white;
+    font-size:large;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);
+}
+#Loginbtn:hover{
+    background-color: white;
+    color:#f75d34 ;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#Formcontainer {
+    border-radius: 5px;
+    background-color: rgb(33, 33, 32,0.8);
+    padding: 20px;
+    height: 100vh;
+    width: 1200px;
+    position: fixed;
+     top: 0;
+    	
+    display: none;
+  }
+  #closeRegister{
+    position: absolute;
+    top: 5px;
+    left: 430px;
+    cursor: pointer;
+    color: black;
+    border-radius: 50px;
+    font-size: 35px;
+    font-weight: bold;
+}
+#closeRegister:hover{
+color:white;
+}
+#close:hover{
+color:black;
+}
+  #formDiv1{
+    width:420px;
+    height:500px;
+	max-height:70%;
+    position: fixed;
+    inset: 0;
+    margin:auto;
+    /* background-color:green; */
+    background-color: white; 
+    padding:20px;
+    border-radius:10px;
+	overflow-y:scroll;
+	overflow-x:none;
+
+  }
+  ::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background: #fbc226;  */
+  border-radius: 10px;
+}
+
+  .starColor{
+  color:red;
+  }
+  .inpformat{
+  padding:6px;
+  width:400px;
+  /* border-radius:5px; */
+  margin:8px;
+  border:none;
+  background: none;
+  border-bottom: 1px solid ;
+  color: black;
+  }
+  .inpformat:focus{
+  outline:none;
+  }
+  #city,#state{
+width:400px;
+padding:6px;
+border:none;
+margin:8px;
+background: transparent;
+border-bottom: 1px solid white;
+color:black;
+
+}
+ #resetBtn{
+  background-color:red;
+  color:white;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  #submit:hover{
+    background-color: white;
+    color: green;
+	border:1px solid green;
+  }
+  #resetBtn:hover{
+    background-color: white;
+    color: red;
+	border:1px solid red;
+  }
+  #registerlink{
+    color: #2e7ec4;
+    text-align: center;
+    
+  }
+  #registerLinkDiv{
+   margin-top: 20px;
+   text-align: center;   
+   margin-left:30px;
+  }
+  
+  .alert {
+    padding: 15px;
+    /* background: linear-gradient(to right, #f7a2a2, #dd1818); */
+	background:  linear-gradient(120deg, #990000 0%, #ff0000 74%);
+    color: white;
+    display: none;
+    width: 400px;
+    position: absolute;
+	font-size:100%;
+    top: 10px;
+    left:20px;
+	/* transform: translate(-70%,-80%); */
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+  
+  #progressBar,#progressBarLogin ,#progressBarlogout{
+    width: 600px;
+    height: 5px;
+    background: white;
+    margin-top: 3px;
+    
+  }
+ #alertBoxLogout{
+   padding: 15px;
+    /* background: linear-gradient(to right, #f7a2a2, #dd1818); */
+  	/* background:  linear-gradient(120deg, #990000 0%, #ff0000 74%); */
+	 background-image: radial-gradient( circle 321px at 8.3% 75.7%,  rgba(209,247,241,1) 0%, rgba(249,213,213,1) 81% );
+    /* color: white; */
+	 color:black;
+    display: none;
+    width: 400px;
+    position: absolute;
+  	font-size:100%;
+    inset:0;
+	margin:auto;
+	height:100px;
+	display:none;
+  }
+ #alertBoxLogoutParent{
+  height:100vh;
+  width:100%;
+  margin:0 auto;
+   background-color: rgb(33, 33, 32,0.8);
+   position:fixed;
+  top: 0px;
+    left:0px;
+	display:none;
+	
+  }
+  
+  @keyframes progress {
+    0% {
+        width: 380px
+    }
+  
+    100% {
+        width: 0px
+    }
+  
+  }
+  .errorDiv{
+    color: red;
+    font-size: 10px;
+    padding: 0px;
+    /* display: none; */
+  }
+select option{
+background-color:white;
+color:black;
+}
+  ::placeholder {
+    color: #AAD7D9;
+    
+  }
+  .lableColor{
+    color: black;
+  }
+   
+  
+  #gender{
+  width:30px;
+  margin:8px;
+  
+  }
+  .checkBoxDiv{
+  width:20px;
+  margin:5px;
+  }
+  .btn{
+  padding:10px 15px ;
+  /* border-color:white; */
+  margin:10px;
+  cursor:pointer;
+  border-radius:5px;
+  border:1px solid white;
+  background-color:red;
+  }
+  #btn-div{
+  margin-left:30%;
+  }
+  #submitRegister{
+  background-color:green;
+  color:white;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);
+  
+  }
+  #resetBtn{
+  background-color:red;
+  color:white;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  #submitRegister:hover{
+    background-color: white;
+    color: green;
+	border:1px solid green;
+  }
+  #resetBtn:hover{
+    background-color: white;
+    color: red;
+	border:1px solid red;
+  }
+  #jspalertBox{
+	 padding: 15px;
+    /* background: linear-gradient(to right, #f7a2a2, #dd1818); */
+	background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+    color: white;
+    display: none;
+    width: 400px;
+    position: absolute;
+	font-size:100%;
+    top: 10px;
+    left:30px;
+}
+.jspprogressBar::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: progressAnimation 1.5s linear forwards;
+}
+
+@keyframes progressAnimation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+  
+ 
+
+  

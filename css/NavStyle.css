@@ -1,0 +1,443 @@
+     #mainContainer{
+     width:1200px;
+      margin: 0 auto;
+     }
+      #NavParent {
+        height: 60px;
+        width: 1200px;
+        background-color: rgb(248, 245, 245);
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    #Nav {
+        height: 100%;
+    }
+    
+    #logo {
+        float: left;
+        height: 60px;
+    }
+    #logoImg{
+        height: 100%; 
+    width: auto; 
+    display: block; 
+        
+    }
+    #navJobDiv {
+        float: left;
+        margin-left: 30px;
+        position:relative;
+    }
+    
+    .navItem {
+        display: inline-block;
+        padding: 17px; 
+        margin-right: 10px; 
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+    #loginBtn {
+        float: right;
+        margin-right: 200px; 
+    }
+    
+    #login-Btn {
+        text-decoration: none;
+        color: black;
+        margin-right: 120px;
+    }
+    #regiRecruiter{
+        font-size: 15px;
+        vertical-align: middle;
+        position: absolute;
+        top: 27px;
+        right:235px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #profile-img {
+        height: 30px;
+        width: 30px;
+        margin-right: 5px; 
+        margin-top: 10px;
+    }
+    
+    #loginProfile {
+        font-size: 15px;
+        vertical-align: middle;
+        position: absolute;
+        top: 27px;
+    }
+    a{
+    color:black;
+    }
+    .searchSkill{
+    padding:3px;
+    position:absolute;
+    top:10px;
+    left:210px;
+    width:260px;
+    border:1px solid;
+    border-radius:5px;
+    heigth:30px;
+    }
+    #searchSkillBar{
+    padding:5px;
+    border:none;
+    font-size:15px;
+    }
+    #searchSkillBar:focus {
+        outline: none;
+        border-color: transparent;
+    }
+    
+    /*================================================== Mid Banner ==================================  */
+    
+    
+     #midBanner{
+     
+      height: 400px;
+       background-color:   rgba(0,0,0, 0.2);
+      background-image: url(../images/midBanner.png);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: contain;
+       padding: 50px;
+     padding-top: 70px;
+     /* filter: blur(8px); */
+  
+    }
+     #midBannerHeading{
+      margin-left:340px;
+      box-shadow: 8px 10px 25px 5px rgba(20, 20, 20, 0.2);
+      background-color:   rgba(0,0,0, 0.5);
+      width:400px;
+      height:95px;
+      color:white;
+
+      }
+      #midBannerHeading1{
+        margin-left: 20px;
+        
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      #midBannerheading2{
+        margin-left:100px;
+       /*  color:#4285f4; */
+       color:#52a8ee;
+      }
+      .search-container {
+        height: 45px;
+        width: 930px;
+        background-color: rgb(237, 240, 240);
+        margin-left: 78px;
+        padding: 5px;
+        border-radius: 10px;
+        margin-top: 70px;
+        box-shadow: 8px 10px 25px 5px rgba(20, 20, 20, 0.2);
+    }
+    
+    .search {
+        float: left; 
+    }
+    
+    #searchBarTop {
+        width: 500px;
+       
+        border: none;
+        
+        padding: 5px;
+        margin-left: 25px;
+        transition: border-color 0.3s;
+        font-size: 18px;
+        margin-top: 7px;
+        background:transparent;
+
+    }
+    #searchBarTop:focus {
+      
+        outline: none;
+        border-color: transparent;
+    }
+    
+    #stateSelect,#expDivSelect {
+        float: right; 
+        margin-top: 0px;
+        margin-left: 10px; 
+       
+    }
+      
+    #NavstateSelect,#expSelect{
+        width: 165px;
+        height: 30px;
+        border: none;
+        border-left: 2px solid black;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    
+     /* ===================================================== View Job Details======================================= */
+    #ViewJobParentDiv{
+        width:1140px;
+        margin:0 auto;
+        margin-top:10px;
+        position:relative;
+    }
+    #ViewJobNameDiv{
+        height: 220px;
+        width:600px;
+        background-color:#FAF9F6;
+        padding: 10px 10px 10px 30px;
+        border-radius: 10px;
+    }
+    .viewJobExp{
+        font-size: 20px;
+
+    }
+    .viewNoOpening{
+        font-size: 16px;
+    }
+    #postedDate{
+        margin-left: 100px;
+    }
+    #applyNowSpan{
+        margin-left: 100px;
+    }
+    #applyNow_btn{
+        padding: 10px 12px;
+        background-color: #529bee;
+        color: white;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+        
+    }
+    #applyNow_btn:hover{
+        background-color: white;
+        color: #529bee;
+
+    }
+    #jobDesc{
+        height: 260px;
+        width: 1108px;
+        background-color: #EEEEFF;
+        border-radius: 10px;
+        padding: 20px 30px 20px 30px;
+        margin-top: 10px;
+         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    }
+    #jobDescripationDiv{
+        font-size: 18px;
+    }
+    #skillsDiv{
+        padding: 10px;
+        background-color: #529bee;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+       
+    }
+     #JobImgDiv{
+        height: 200px;
+        width: 500px;
+        position: absolute;
+        top:34px;
+        right:-44px;
+        background-image: url("https://img.freepik.com/free-vector/tiny-people-searching-business-opportunities_74855-19928.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1718668800&semt=ais_user");
+        background-size: cover;
+        background-position: center;
+    }
+    
+      .custom-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .custom-dropdown-content a {
+        color: black;
+        width:300px;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color:red;
+    }
+    .custom-dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    
+    /*==============================================Register company Form==========================  */
+    #RegisterCompanyParent{
+    /* display:none; */
+       width:1200px;
+       margin:0 auto;
+    }
+     #Register_Company {
+            height: 498px;
+            width: 700px;
+            background-color: #FFF5EE;
+            display: inline-block;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px;
+             margin-left:240px; 
+        }
+        #company_img {
+            height: 400px;
+            width: 300px;
+            background-image: url(../images/companyFormImg.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            float: left;
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+        #Company_registerForm {
+            float: right;
+            padding: 20px;
+            width: 350px;
+        }
+        #Company_registerForm form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #Company_registerForm form div {
+            margin-bottom: 15px;
+        }
+        #Company_registerForm form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        #Company_registerForm form input[type="text"],
+        #Company_registerForm form input[type="password"] {
+            width: calc(100% - 12px);
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        #Company_registerForm form input[type="password"] {
+            margin-top: 5px;
+        }
+        #Company_registerForm form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+        #Company_registerForm form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    
+    /*=======================================Footer=========================================  */
+    
+     .site-footer {
+        background-color: #dfe0e2;
+        padding: 45px 0 20px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #737373;
+        /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); */
+    }
+    
+    .site-footer hr {
+        border-top-color: #bbb;
+        opacity: 0.5;
+    }
+    
+    .site-footer hr.small {
+        margin: 20px 0;
+    }
+    
+    .site-footer h6 {
+        color: #529bee;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 5px;
+        letter-spacing: 2px;
+    }
+    
+    .site-footer a {
+        color: #737373;
+    }
+    
+    .site-footer a:hover {
+        color: #fff;
+        
+    }
+    
+    .footer-section {
+        display: inline-block;
+        vertical-align: top;
+        width: 30.33%; 
+        padding-right: 20px;
+        padding: 16px; 
+       
+    }
+    
+    .footer-section h6 {
+        margin-bottom: 10px;
+    }
+    
+    .footer-links {
+        padding-left: 0;
+        list-style: none;
+    }
+    
+    .footer-links li {
+        margin-bottom: 8px;
+    }
+    
+    .footer-links a {
+        color: #737373;
+        text-decoration: none;
+    }
+    
+    .footer-links a:hover {
+        color: #529bee;
+        text-decoration: none;
+    }
+    
+    .social-icons ul {
+        list-style: none;
+        padding: 0;
+        text-align: right;
+    }
+    
+    .social-icons li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
+    .social-icons a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 100%;
+        background-color: #33353d;
+        color: #fff;
+    }
+    
+    .social-icons a:hover {
+        background-color: #555;
+    }
+    
+    
+    

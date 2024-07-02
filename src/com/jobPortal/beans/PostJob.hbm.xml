@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.jobPortal.beans.PostJob" 
+    table="PostJob"
+>
+
+    <id
+        name="jobId"
+        type="java.lang.Long"
+        column="job_id"
+    >
+    
+        <generator class="native" />
+    </id>
+
+    <property
+        name="companyName"
+        type="java.lang.String"
+        column="Company_name"
+        length="255"
+    />
+    <property
+        name="role"
+        type="java.lang.String"
+        column="Role"
+        length="255"
+    />
+    <property
+        name="jobPackage"
+        type="java.lang.Integer"
+        column="JobPackage"
+        length="11"
+    />
+    <property
+        name="locationState"
+        type="java.lang.String"
+        column="Location_State"
+        length="255"
+    />
+    <property
+        name="noOfOpenings"
+        type="java.lang.Integer"
+        column="NoOfOpenings"
+        length="11"
+    />
+    <property
+        name="requiredEducation"
+        type="java.lang.String"
+        column="requiredEducation"
+        length="255"
+    />
+    <property
+        name="requiredSkills"
+        type="java.lang.String"
+        column="requiredSkills"
+        length="255"
+    />
+    <property
+        name="experience"
+        type="java.lang.Integer"
+        column="Experience"
+        length="11"
+    />
+    <property
+        name="jobDesc"
+        type="java.lang.String"
+        column="Job_Desc"
+        length="255"
+    />
+    <property
+        name="aboutCompany"
+        type="java.lang.String"
+        column="About_Company"
+        length="255"
+    />
+    <property
+        name="companyType"
+        type="java.lang.String"
+        column="Company_type"
+        length="255"
+    />
+    <property
+        name="isActive"
+        type="java.lang.String"
+        column="isActive"
+        length="255"
+    />
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="createdBy"
+        length="255"
+    />
+    <property
+        name="createdDate"
+        type="java.lang.String"
+        column="createdDate"
+        length="255"
+    />
+    <property
+        name="modifiedBy"
+        type="java.lang.String"
+        column="modifiedBy"
+        length="255"
+    />
+    <property
+        name="modifiedDate"
+        type="java.lang.String"
+        column="modifiedDate"
+        length="255"
+    />
+
+    <!-- Associations -->
+  
+    <!-- bi-directional many-to-one association to Company -->
+    <many-to-one
+        name="company"
+        class="com.jobPortal.beans.Company"
+        not-null="true"
+    >
+        <column name="FkcompanyId" />
+    </many-to-one>
+    <!-- bi-directional one-to-many association to AppliedJob -->
+    <set
+        name="appliedJobs"
+        lazy="true"
+        inverse="true"
+		cascade="none"
+    >
+        <key>
+            <column name="job_id" />
+        </key>
+        <one-to-many 
+            class="com.jobPortal.beans.AppliedJob"
+        />
+    </set>
+
+</class>
+</hibernate-mapping>

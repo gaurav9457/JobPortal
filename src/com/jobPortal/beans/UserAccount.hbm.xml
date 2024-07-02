@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.jobPortal.beans.UserAccount" 
+    table="User_account"
+>
+
+    <id
+        name="userAccountId"
+        type="java.lang.Long"
+        column="userAccount_id"
+    >
+    
+        <generator class="native" />
+    </id>
+
+    <property
+        name="emailId"
+        type="java.lang.String"
+        column="email_id"
+        length="255"
+    />
+    <property
+        name="password"
+        type="java.lang.String"
+        column="password"
+        length="255"
+    />
+    <property
+        name="userType"
+        type="java.lang.String"
+        column="user_type"
+        length="255"
+    />
+    <property
+        name="isActive"
+        type="java.lang.String"
+        column="isActive"
+        length="255"
+    />
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="createdBy"
+        length="255"
+    />
+    <property
+        name="createdDate"
+        type="java.lang.String"
+        column="createdDate"
+        length="255"
+    />
+    <property
+        name="modifiedBy"
+        type="java.lang.String"
+        column="modifiedBy"
+        length="255"
+    />
+    <property
+        name="modifiedDate"
+        type="java.lang.String"
+        column="modifiedDate"
+        length="255"
+    />
+
+    <!-- Associations -->
+  
+    <!-- bi-directional one-to-many association to UserRegister -->
+    <set
+        name="userRegisters"
+        lazy="true"
+        inverse="true"
+		cascade="none"
+    >
+        <key>
+            <column name="FkuserAccount_id" />
+        </key>
+        <one-to-many 
+            class="com.jobPortal.beans.UserRegister"
+        />
+    </set>
+    <!-- bi-directional one-to-many association to Company -->
+    <set
+        name="companies"
+        lazy="true"
+        inverse="true"
+		cascade="none"
+    >
+        <key>
+            <column name="FkuserAccount_id" />
+        </key>
+        <one-to-many 
+            class="com.jobPortal.beans.Company"
+        />
+    </set>
+
+</class>
+</hibernate-mapping>

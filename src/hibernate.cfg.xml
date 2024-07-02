@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"> 
+  
+<hibernate-configuration>  
+  
+    <session-factory>  
+        <property name="hbm2ddl.auto">update</property>  
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>  
+        <property name="connection.url">jdbc:mysql://192.168.57.5:3306/gaurav</property>  
+        <property name="connection.username">gaurav.p</property>  
+        <property name="connection.password">E9fGhIjK</property>  
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>  
+    
+     <mapping resource="com/jobPortal/beans/UserRegister.hbm.xml"/>
+     <mapping resource="com/jobPortal/beans/UserAccount.hbm.xml"/>
+      <mapping resource="com/jobPortal/beans/StateCityData.hbm.xml"/>
+      <mapping resource="com/jobPortal/beans/AppliedJob.hbm.xml"/>
+       <mapping resource="com/jobPortal/beans/Company.hbm.xml"/>
+        <mapping resource="com/jobPortal/beans/PostJob.hbm.xml"/>
+        <mapping resource="com/jobPortal/beans/AdminTable.hbm.xml"/>
+        <mapping resource="com/jobPortal/beans/ContactUser.hbm.xml"/>
+    </session-factory>  
+  
+</hibernate-configuration>  

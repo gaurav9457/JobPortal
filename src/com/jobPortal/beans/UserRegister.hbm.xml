@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.jobPortal.beans.UserRegister" 
+    table="UserRegister"
+>
+
+    <id
+        name="userId"
+        type="java.lang.Long"
+        column="user_id"
+    >
+    
+        <generator class="native" />
+    </id>
+
+    <property
+        name="firstName"
+        type="java.lang.String"
+        column="firstName"
+        length="255"
+    />
+    <property
+        name="lastName"
+        type="java.lang.String"
+        column="lastName"
+        length="255"
+    />
+    <property
+        name="mobileNo"
+        type="java.lang.String"
+        column="mobile_no"
+        length="16277215"
+    />
+    <property
+        name="emailId"
+        type="java.lang.String"
+        column="email_id"
+        length="255"
+    />
+    <property
+        name="password"
+        type="java.lang.String"
+        column="password"
+        length="255"
+    />
+    <property
+        name="education"
+        type="java.lang.String"
+        column="Education"
+        length="255"
+    />
+    <property
+        name="skills"
+        type="java.lang.String"
+        column="Skills"
+        length="255"
+    />
+    <property
+        name="state"
+        type="java.lang.String"
+        column="State"
+        length="255"
+    />
+    <property
+        name="city"
+        type="java.lang.String"
+        column="City"
+        length="255"
+    />
+    <property
+        name="isActive"
+        type="java.lang.String"
+        column="isActive"
+        length="255"
+    />
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="createdBy"
+        length="255"
+    />
+    <property
+        name="createdDate"
+        type="java.lang.String"
+        column="createdDate"
+        length="255"
+    />
+    <property
+        name="modifiedBy"
+        type="java.lang.String"
+        column="modifiedBy"
+        length="255"
+    />
+    <property
+        name="modifiedDate"
+        type="java.lang.String"
+        column="modifiedDate"
+        length="255"
+    />
+    <property
+        name="resumeFile"
+        type="java.lang.String"
+        column="resumeFile"
+        length="255"
+    />
+
+    <!-- Associations -->
+  
+    <!-- bi-directional many-to-one association to UserAccount -->
+    <many-to-one
+        name="userAccount"
+        class="com.jobPortal.beans.UserAccount"
+        not-null="true"
+    >
+        <column name="FkuserAccount_id" />
+    </many-to-one>
+    <!-- bi-directional one-to-many association to AppliedJob -->
+    <set
+        name="appliedJobs"
+        lazy="true"
+        inverse="true"
+		cascade="none"
+    >
+        <key>
+            <column name="user_id" />
+        </key>
+        <one-to-many 
+            class="com.jobPortal.beans.AppliedJob"
+        />
+    </set>
+    <!-- bi-directional one-to-many association to ContactUser -->
+    <set
+        name="contactUsers"
+        lazy="true"
+        inverse="true"
+		cascade="none"
+    >
+        <key>
+            <column name="userId" />
+        </key>
+        <one-to-many 
+            class="com.jobPortal.beans.ContactUser"
+        />
+    </set>
+
+</class>
+</hibernate-mapping>
